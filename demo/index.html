@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<script type="module" src="/dist/html-include.js"></script>
+
+<html-include src="./foo.html">fail</html-include>
+<html-include src="./bar.html"><p>Bar</p></html-include>
+<html-include><p>Baz</p></html-include>
+
+<!--Warning: recursive includes are allowed
+<html-include src></html-include>
+<html-include src=""></html-include>
+<html-include src="."></html-include>
+-->
