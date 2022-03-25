@@ -10,7 +10,7 @@
     "dev": "esbuild --bundle --outfile=dist/html-include.js --watch html-include.ts",
     "dev:test": "esbuild --bundle --outfile=dist/html-include.test.js --watch html-include.test.ts",
     "dist": "esbuild --bundle --outfile=dist/html-include.js html-include.ts",
-    "dist:all": "npm run dist && npm run dist:min && npm run dist:test",
+    "dist:all": "npm run dist && npm run dist:min && npm run dist:test && npm run compile",
     "dist:min": "esbuild --bundle --minify --outfile=dist/html-include.min.js html-include.ts",
     "dist:test": "esbuild --bundle --outfile=dist/html-include.test.js html-include.test.ts",
     "lint": "eslint *.ts",
